@@ -1,0 +1,71 @@
+.bygpass {
+  background-image: url("http://via.placeholder.com/1980x1080");
+  background-position: center;
+  background-size: cover;
+}
+
+.bygpass .custom-navbar {
+  border-radius: 0;
+}
+
+.bygpass .custom-navbar .navbar-nav .active a {
+  background: transparent;
+}
+
+.bygpass .custom-navbar .navbar-nav .active a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  width: 70%;
+  height: 2px;
+  background-color: red;
+}
+
+.bygpass .content-area .heading {
+  padding-top: 40px;
+  color: red;
+  margin-bottom: 0;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.bygpass .content-area .bygpass-head {
+  width: 20%;
+}
+
+.bygpass .content-area .bygpass-head p:first-child {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 15%;
+}
+
+.bygpass .content-area .bygpass-head p:first-child .fa {
+  font-size: 30px;
+}
+
+.bygpass .content-area .bygpass-head p:last-child {
+  display: inline-block;
+  width: 82%;
+  padding-left: 10px;
+  font-size: 11px;
+}
+
+.bygpass .content-area .bygpass-head p:last-child span {
+  color: red;
+}
+
+.bygpass .content-area .small-section {
+  margin: 40px 0px;
+}
+
+.bygpass .content-area .small-section button {
+  border: none;
+  background: red;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+.bygpass .content-area h3 {
+  color: red;
+  margin-top: 0;
+}
