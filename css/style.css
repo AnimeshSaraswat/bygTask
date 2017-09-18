@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+body {
+  font-family: 'Roboto Condensed';
+}
+
 .bygpass {
-  background-image: url("http://via.placeholder.com/1980x1080");
-  background-position: center;
-  background-size: cover;
+  background-color: #fff;
 }
 
 .bygpass .custom-navbar {
@@ -68,4 +71,274 @@
 .bygpass .content-area h3 {
   color: red;
   margin-top: 0;
+}
+
+.workout, .feature-fitness {
+  background-color: #222;
+  color: #fff;
+}
+
+.workout .heading, .feature-fitness .heading {
+  padding-top: 80px;
+  font-size: 70px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.workout h3, .feature-fitness h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.workout .form, .feature-fitness .form {
+  color: #666;
+  background: rgba(255, 255, 255, 0.95);
+  margin-bottom: 40px;
+  padding: 7px 0px 7px 7px;
+}
+
+.workout .form select, .feature-fitness .form select, .workout .form input, .feature-fitness .form input, .workout .form button, .feature-fitness .form button {
+  border-radius: 0;
+  float: left;
+  border: none;
+  background: transparent;
+}
+
+.workout .form select:focus, .feature-fitness .form select:focus, .workout .form input:focus, .feature-fitness .form input:focus, .workout .form button:focus, .feature-fitness .form button:focus {
+  outline: none;
+}
+
+.workout .form .location, .feature-fitness .form .location {
+  width: 25%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  padding: 10px 10px;
+  background: transparent url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png) no-repeat;
+  background-size: 20px;
+  background-position: right 10px center;
+  border-right: 1px solid #aaa;
+}
+
+.workout .form input, .feature-fitness .form input {
+  width: 60%;
+  padding: 10px 20px;
+  float: left;
+}
+
+.workout .form button, .feature-fitness .form button {
+  float: left;
+  font-size: 17px;
+  width: 15%;
+  background: red;
+  text-align: center;
+  color: #fff;
+  padding: 15px;
+  margin: -7px 0px;
+}
+
+.schedule {
+  padding: 50px 0px;
+}
+
+.schedule h1 {
+  margin-bottom: 0;
+  font-size: 40px;
+}
+
+.schedule .sub-head {
+  font-size: 20px;
+  color: red;
+}
+
+.schedule .diet-para {
+  padding-left: 20%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 13px;
+}
+
+.schedule button {
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+
+.feature-fitness {
+  padding: 50px;
+}
+
+.feature-fitness h3 {
+  padding-top: 20px;
+}
+
+.feature-fitness .card-layout .card {
+  width: 25%;
+  float: left;
+  border: 1px solid transparent;
+}
+
+.feature-fitness .card-layout .card .img-holder {
+  display: flex;
+  height: 180px;
+}
+
+.feature-fitness .card-layout .card .content {
+  background: #fff;
+  color: #222;
+  padding: 10px;
+}
+
+.feature-fitness .card-layout .card .content p {
+  margin: 0px;
+}
+
+.feature-fitness .card-layout .card .content .mainhead {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.feature-fitness .card-layout .card .content p:last-child {
+  font-size: 13px;
+  color: #aaa;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.feature-fitness .card-layout .card .content .category {
+  padding-top: 10px;
+}
+
+.feature-fitness .card-layout .card .content .category span {
+  display: inline-block;
+}
+
+.feature-fitness .card-layout .card .content .category .star {
+  color: red;
+}
+
+.feature-fitness .card-layout .card .content .category .rating {
+  padding-left: 5px;
+}
+
+.feature-fitness .card-layout .card .content .category .cat-name {
+  float: right;
+  border: 1px solid #eee;
+  padding: 2px 10px;
+  color: #777;
+}
+
+.never-miss {
+  padding: 40px;
+}
+
+.never-miss .motivation-cards {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.never-miss .offer .text-content {
+  background: #222;
+  padding: 50px 20px 30px;
+}
+
+.never-miss .offer .text-content p:first-child {
+  color: red;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.never-miss .offer .text-content p:first-child span {
+  font-size: 50px;
+}
+
+.never-miss .offer .text-content p:nth-child(2) {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 40px;
+  margin: 0px;
+}
+
+.never-miss .offer .text-content button {
+  border: none;
+  background: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 5px;
+}
+
+.never-miss .offer .text-content button span {
+  color: red;
+}
+
+.never-miss .price .text-content {
+  background: linear-gradient(#64a15f, #006CA6);
+  color: #fff;
+  padding: 145px 10px 10px;
+  opacity: 0.8;
+}
+
+.never-miss .price .text-content p {
+  margin: 0;
+}
+
+.never-miss .price .text-content p:first-child {
+  font-size: 20px;
+}
+
+.never-miss .price .text-content p:nth-child(2) {
+  font-size: 30px;
+}
+
+.never-miss .price .text-content p:last-child {
+  font-size: 12px;
+}
+
+.never-miss .invite {
+  color: #fff;
+}
+
+.never-miss .invite .text-content {
+  background: linear-gradient(red, black);
+  padding: 144px 10px 10px;
+}
+
+.never-miss .invite .text-content p {
+  margin: 0;
+}
+
+.never-miss .invite .text-content p:first-child {
+  font-size: 20px;
+}
+
+.never-miss .download-subscribe {
+  padding: 30px;
+}
+
+.never-miss .download-subscribe .subscribe {
+  border-right: 1px solid #ddd;
+}
+
+.never-miss .download-subscribe .subscribe .subs-form {
+  padding-top: 40px;
+}
+
+.never-miss .download-subscribe .subscribe .subs-form input {
+  width: 60%;
+  padding: 10px;
+}
+
+.never-miss .download-subscribe .subscribe .subs-form button {
+  width: 25%;
+  padding: 11px;
+  background: red;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.never-miss .download-subscribe .download img.img-responsive {
+  margin: 0 auto;
 }
