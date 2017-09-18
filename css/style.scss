@@ -148,14 +148,25 @@ body {
 .feature-fitness {
   @extend .workout;
   padding: 50px;
+
+  .flex-scrolling {
+    display: flex;
+    overflow: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
   h3 {
     padding-top: 20px;
   }
   .card-layout {
+    display: flex;
+    flex-wrap: nowrap;
     .card {
       width: 25%;
       float: left;
       border: 1px solid transparent;
+      flex: 0 0 auto;
       .img-holder {
         display: flex;
         height: 180px;
@@ -292,6 +303,69 @@ body {
     .download {
       img.img-responsive {
         margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bygpass .custom-navbar .navbar-nav .active a:after {
+    width: 20%;
+  }
+  .custom-navbar ul.navbar-nav {
+    text-align: center;
+  }
+  .bygpass .content-area .bygpass-head {
+    width: 100%;
+  }
+  .workout {
+    .form{
+      padding: 0px;
+      .location, input, button {
+        width: 100%;
+        margin: 0;
+        border: none;
+      }
+      input {
+        padding-left: 10px;
+        border-top: 1px solid #ccc;
+      }
+    }
+  }
+  .schedule {
+    .diet-content {
+      text-align: center;
+    }
+  }
+  .schedule .diet-para {
+    padding: 0px;
+  }
+  .feature-fitness {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .never-miss {
+    padding-left: 0px;
+    padding-right: 0px;
+    .text-content {
+      margin-bottom: 10px;
+    }
+    .download-subscribe {
+      padding: 10px;
+      .subscribe {
+        border: none;
+        .subs-form {
+          padding-bottom: 20px;
+          border-bottom: 1px solid #ddd;
+          margin-bottom: 10px;
+          input {
+            border: 1px solid #ccc;
+          }
+          button {
+            width: 35%;
+            padding: 10px;
+          }
+        }
       }
     }
   }

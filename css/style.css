@@ -169,14 +169,28 @@ body {
   padding: 50px;
 }
 
+.feature-fitness .flex-scrolling {
+  display: flex;
+  overflow: auto;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
 .feature-fitness h3 {
   padding-top: 20px;
+}
+
+.feature-fitness .card-layout {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .feature-fitness .card-layout .card {
   width: 25%;
   float: left;
   border: 1px solid transparent;
+  flex: 0 0 auto;
 }
 
 .feature-fitness .card-layout .card .img-holder {
@@ -341,4 +355,63 @@ body {
 
 .never-miss .download-subscribe .download img.img-responsive {
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .bygpass .custom-navbar .navbar-nav .active a:after {
+    width: 20%;
+  }
+  .custom-navbar ul.navbar-nav {
+    text-align: center;
+  }
+  .bygpass .content-area .bygpass-head {
+    width: 100%;
+  }
+  .workout .form, .feature-fitness .form {
+    padding: 0px;
+  }
+  .workout .form .location, .feature-fitness .form .location, .workout .form input, .feature-fitness .form input, .workout .form button, .feature-fitness .form button {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+  .workout .form input, .feature-fitness .form input {
+    padding-left: 10px;
+    border-top: 1px solid #ccc;
+  }
+  .schedule .diet-content {
+    text-align: center;
+  }
+  .schedule .diet-para {
+    padding: 0px;
+  }
+  .feature-fitness {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .never-miss {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .never-miss .text-content {
+    margin-bottom: 10px;
+  }
+  .never-miss .download-subscribe {
+    padding: 10px;
+  }
+  .never-miss .download-subscribe .subscribe {
+    border: none;
+  }
+  .never-miss .download-subscribe .subscribe .subs-form {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  .never-miss .download-subscribe .subscribe .subs-form input {
+    border: 1px solid #ccc;
+  }
+  .never-miss .download-subscribe .subscribe .subs-form button {
+    width: 35%;
+    padding: 10px;
+  }
 }
